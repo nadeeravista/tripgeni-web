@@ -1,0 +1,252 @@
+/* ----- Company ----- */
+@import "../../Theme.scss";
+
+.company__OTA {
+  // background-color: coral;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.5);
+  @include flexbox;
+  .company__OTA__image {
+    // background-color: lightseagreen;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    img {
+      width: 100px;
+    }
+  }
+  .company__OTA__name {
+    // background-color: lightcoral;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+  .company__OTA__region {
+    // background-color: lightpink;
+    width: 40%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+  .company__OTA__audience {
+    // background-color: lightslategray;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .company__OTA {
+    .company__OTA__image {
+      display: none;
+    }
+    .company__OTA__name {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+    .company__OTA__region {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+    .company__OTA__audience {
+      display: none;
+    }
+  }
+}
+
+/* ----- Company - OTHER ----- */
+
+.company__OTHER {
+  // background-color: coral;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.5);
+  @include flexbox;
+  .company__OTHER__image {
+    // background-color: lightseagreen;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    img {
+      width: 100px;
+    }
+  }
+  .company__OTHER__name {
+    // background-color: lightcoral;
+    width: 15%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+  .company__OTHER__region {
+    // background-color: lightpink;
+    width: 30%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+  .company__OTHER__audience {
+    // background-color: lightslategray;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+  .company__OTHER__solutions {
+    // background-color: lightslategray;
+    width: 15%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .company__OTHER {
+    .company__OTHER__image {
+      display: none;
+    }
+    .company__OTHER__name {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+    .company__OTHER__region {
+      display: none;
+    }
+    .company__OTHER__audience {
+      display: none;
+    }
+
+    .company__OTHER__solutions {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* ----- Company - PMS ----- */
+.company__PMS {
+  // background-color: coral;
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid rgba($color: $grey, $alpha: 0.5);
+  @include flexbox;
+  .company__PMS__image {
+    // background-color: lightseagreen;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    img {
+      width: 100px;
+    }
+  }
+  .company__PMS__name {
+    // background-color: lightcoral;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+ 
+  .company__PMS__region {
+    // background-color: lightslategray;
+    width: 40%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    p {
+      color: $grey;
+    }
+  }
+
+   .company__PMS__certification{
+    // background-color: lightpink;
+    width: 20%;
+    height: 90%;
+    @include flexbox;
+    justify-content: flex-start;
+    button{
+      width: 150px;
+      @include flexbox;
+      justify-content: space-between;
+      color: $lightBlue;
+      font-size: 16px;
+      background-color: $white;
+      border: 2px solid $lightBlue;
+      padding: 10px 20px;
+      border-radius: 20px;
+
+
+      img{
+        height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .company__PMS {
+    .company__PMS__image {
+      display: none;
+    }
+    .company__PMS__name {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+
+    .company__PMS__region {
+      display: none;
+    }
+
+    .company__PMS__certification {
+      width: 50%;
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

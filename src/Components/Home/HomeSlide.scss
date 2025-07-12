@@ -1,0 +1,133 @@
+/* ----- Home Slide ----- */
+@import "../../Theme.scss";
+
+.homeslide {
+  width: 100%;
+  height: 100%;
+  //   background-color: lightgreen;
+  @include flexbox;
+
+  .homeslide__image {
+    // background-color: seagreen;
+    width: 30%;
+    height: 100%;
+    @include flexbox;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  .homeslide__content {
+    // background-color: sienna;
+    width: 80%;
+    height: 100%;
+
+    .homeslide__title {
+    //   background-color: slateblue;
+      height: 20%;
+      width: 100%;
+      @include flexbox;
+      justify-content: flex-start;
+      p {
+        font-size: 20px;
+        color: $deepBlue;
+      }
+    }
+    .homeslide__paragraph {
+    //   background-color: violet;
+      height: 60%;
+      width: 100%;
+      @include flexbox;
+      justify-content: flex-start;
+      p {
+        text-align: justify;
+        color: $grey;
+      }
+    }
+    .homeslide__link {
+    //   background-color: tomato;
+      height: 10%;
+      width: 100%;
+      @include flexbox;
+      justify-content: flex-start;
+      a {
+        text-decoration: none;
+        color: $lightBlue;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeslide {
+    flex-direction: column;
+    .homeslide__image {
+      width: 100%;
+      height: 40%;
+      img {
+        height: 125px;
+      }
+    }
+
+    .homeslide__content {
+      width: 100%;
+      height: 60%;
+
+      .homeslide__title {
+          height: 20%;
+        p {
+          font-size: 18px;
+        }
+      }
+      .homeslide__paragraph {
+          height: 55%;
+        p {
+          font-size: 14px;
+        }
+      }
+      .homeslide__link {
+          height: 25%;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .homeslide {
+    flex-direction: column;
+    .homeslide__image {
+      width: 100%;
+      height: 20%;
+      img {
+        height: 110px;
+      }
+    }
+
+    .homeslide__content {
+      width: 100%;
+      height: 80%;
+
+      .homeslide__title {
+          height: 20%;
+        p {
+          font-size: 18px;
+        }
+      }
+      .homeslide__paragraph {
+          height: 55%;
+        p {
+          font-size: 14px;
+        }
+      }
+      .homeslide__link {
+          height: 25%;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

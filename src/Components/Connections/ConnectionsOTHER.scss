@@ -1,0 +1,378 @@
+/* ----- Connections - OTHER ----- */
+@import "../../Theme.scss";
+
+.con__OTHER {
+  .con__OTHER__bg {
+    width: 100%;
+    height: 100vh;
+    // background-color: lightgreen;
+
+    background-image: url("../BackgroundImages/ConnectionsBG.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    @include flexbox;
+    align-items: flex-start;
+
+    .con__OTHER__wrapper {
+      // background-color: lightcoral;
+      @include flexbox;
+      flex-direction: column;
+      height: 300px;
+      margin-top: 50px;
+
+      .con__OTHER__title {
+        // background-color: lightseagreen;
+        @include flexbox;
+
+        width: 80%;
+        height: 30%;
+        margin: 0px auto;
+        @include flexbox;
+        flex-direction: column;
+
+        p {
+          font-size: 36px;
+          color: $white;
+          text-align: center;
+        }
+      }
+      .con__OTHER__paragraph {
+        // background-color: mediumturquoise;
+        @include flexbox;
+
+        width: 90%;
+        height: 80%;
+        margin: 20px auto;
+        @include flexbox;
+
+        p {
+          font-size: 16px;
+          text-align: center;
+          color: $white;
+        }
+      }
+
+      .con__OTHER__list{
+            // background-color: crimson;
+        @include flexbox;
+
+        width: 80%;
+        height: 80%;
+        margin: 0px auto;
+        @include flexbox;
+
+        ul{
+            li{
+                color: $white;
+                margin: 10px 0px;
+            }
+        }
+      }
+    }
+  }
+
+  .con__OTHER__navigator {
+    // background-color: lightgray;
+    @include flexbox;
+
+    height: 200px;
+
+    .con__OTHER__navigator__buttons {
+      // background-color: lightseagreen;
+      @include flexbox;
+      width: 50%;
+      height: 40%;
+
+      .con__OTHER__navigator__button {
+        // background-color: lightgreen;
+        height: 100%;
+        @include flexbox;
+        margin: 0px 20px;
+
+        button {
+          width: 100px;
+          padding: 10px;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          background-color: $lightBlue;
+          color: $white;
+          font-weight: bold;
+          transition: background-color 0.5s ease-in-out;
+
+          &:hover{
+            background-color: $deepBlue;
+          }
+        }
+      }
+    }
+    .con__OTHER__navigator__search {
+      // background-color: lightcoral;
+      width: 30%;
+      height: 40%;
+
+      @include flexbox;
+
+      .con__OTHER__navigator__searchbox {
+        // background-color: lightgreen;
+        height: 40px;
+        @include flexbox;
+        input {
+          height: 100%;
+          width: 200px;
+          color: $grey;
+          border: 1px solid rgba($color:$grey, $alpha: 0.5);
+          border-radius: 15px 0px 0px 15px;
+          padding: 0px 10px;
+        }
+      }
+      .con__OTHER__navigator__searchimage {
+        // background-color: lightpink;
+        background-color: $lightBlue;
+        height: 40px;
+        width: 40px;
+        border-radius: 0px 15px 15px 0px;
+        @include flexbox;
+
+        img {
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .con__OTHER__header {
+    // background-color: lightgreen;
+    background-color: $lightBlue;
+    height: 100px;
+
+    @include flexbox;
+    .con__OTHER__header__image {
+      // background-color: lightseagreen;
+      width: 20%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__OTHER__header__name {
+      // background-color: lightcoral;
+      width: 15%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__OTHER__header__region {
+      // background-color: lightpink;
+      width: 30%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__OTHER__header__audience {
+      // background-color: lightslategray;
+      width: 20%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__OTHER__header__solutions {
+      // background-color: lightslategray;
+      width: 15%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .con__OTHER__companies {
+    min-height: 500px;
+    width: 100%;
+    // background-color: lightsteelblue;
+  }
+
+  .con__OTHER__form {
+    height: 1200px;
+    width: 100%;
+    background-image: url("../BackgroundImages/ConnectionsFormBanner.png");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .con__OTHER__form__container {
+      // background-color: lightcoral;
+      width: 80%;
+      height: 80%;
+
+      background-image: url("../BackgroundImages/ConnectionsFormBG.png");
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      @include flexbox;
+
+      .con__OTHER__form__left {
+        height: 50%;
+        width: 40%;
+        // background-color: rgba($color: #000000, $alpha: 0.5);
+        @include flexbox;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        .con__OTHER__form__left__title {
+          // background-color: lightpink;
+          width: 80%;
+          height: 30%;
+          @include flexbox;
+
+          p {
+            color: $white;
+            font-size: 16px;
+            padding: 10px 0px;
+          }
+        }
+
+      }
+      .con__OTHER__form__right {
+        height: 90%;
+        width: 50%;
+        // background-color: slateblue;
+        @include flexbox;
+        flex-direction: column;
+        .con__OTHER__form__right__title {
+          // background-color: tomato;
+          width: 100%;
+          height: 10%;
+          @include flexbox;
+
+          p {
+            color: $grey;
+            font-size: 28px;
+          }
+        }
+        .con__OTHER__form__right__body {
+          // background-color: yellowgreen;
+          width: 100%;
+          height: 90%;
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+
+// Width
+@media (max-width: 800px) {
+  .con__OTHER {
+    .con__OTHER__bg {
+      .con__OTHER__wrapper {
+        height: 500px;
+
+        .con__OTHER__title {
+          p {
+            font-size: 24px;
+          }
+        }
+        .con__OTHER__paragraph {
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .con__OTHER__list {
+          ul li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .con__OTHER__navigator {
+      flex-direction: column;
+
+      .con__OTHER__navigator__buttons {
+        width: 80%;
+
+        .con__OTHER__navigator__button{
+          margin: 0px 5px;
+        }
+      }
+      .con__OTHER__navigator__search {
+        width: 80%;
+      }
+    }
+
+    .con__OTHER__form{
+      .con__OTHER__form__container{
+        background-image: none;
+        background-color: $white;
+        .con__OTHER__form__left{
+          display: none;
+        }
+
+        .con__OTHER__form__right{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+.con__OTHER{
+  .con__OTHER__header{
+    .con__OTHER__header__image{display: none}
+    .con__OTHER__header__name{width: 50%;}
+    .con__OTHER__header__region{display: none;}
+    .con__OTHER__header__audience{display: none}
+    .con__OTHER__header__solutions{width: 50%;}
+  }
+}
+}
+@media (max-width: 400px) {
+  .con__OTHER {
+    .con__OTHER__bg {
+      .con__OTHER__wrapper {
+        height: 500px;
+
+        .con__OTHER__title {
+          p {
+            font-size: 20px;
+          }
+        }
+        .con__OTHER__paragraph {
+          p {
+            font-size: 14px;
+          }
+        }
+        .con__OTHER__list {
+          ul li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// Height
+@media (max-height: 600px) {
+  .con__OTHER {
+    .con__OTHER__bg {
+      height: 150vh;
+    }
+  }
+}
+@media (max-height: 600px) {
+  .con__OTHER {
+    .con__OTHER__bg {
+      height: 200vh;
+      .con__OTHER__wrapper {
+        height: 500px;
+      }
+    }
+  }
+}

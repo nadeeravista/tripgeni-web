@@ -1,0 +1,49 @@
+/* ----- Privacy ----- */
+@import "../../Theme.scss";
+
+.privacy {
+  .privacy__heading {
+    // background-color: lightgreen;
+    width: 80%;
+    margin: 20px auto;
+    height: 200px;
+    @include flexbox;
+
+    p {
+      font-size: 36px;
+      color: $grey;
+    }
+  }
+  .privacy__title {
+    // background-color: lightcoral;
+    width: 80%;
+    margin: 0px auto;
+
+    p {
+      color: $deepBlue;
+      font-size: 18px;
+    }
+  }
+  .privacy__paragraph {
+    // background-color: lightseagreen;
+    width: 80%;
+    margin: 20px auto;
+
+    p {
+      color: $grey;
+      text-align: justify;
+    }
+  }
+  .privacy__list {
+    // background-color: lightgreen;
+    width: 80%;
+    margin: 20px auto;
+
+    ul{
+        padding: 0px 30px;
+        li{
+            color: $grey;
+        }
+    }
+  }
+}

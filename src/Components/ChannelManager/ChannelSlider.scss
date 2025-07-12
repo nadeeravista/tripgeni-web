@@ -1,0 +1,21 @@
+/* ----- Channel Slider ----- */
+@import "../../Theme.scss";
+
+.channelslider {
+  margin: auto;
+  // background-color: lightslategray;
+  .channelslider__swipe {
+    // background-color: lightblue;
+    // background-color: $fadedBlue;
+    height: 300px;
+    @include flexbox;
+  }
+
+  .channelslide {
+    // background-color: $white;
+    @include flexbox;
+    img {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+/* ----- Login ----- */
+@import "../../Theme.scss";
+
+.login {
+  // background-color: lightgreen;
+  height: calc(100vh);
+  width: 100%;
+  @include flexbox;
+
+  .login__container {
+    // background-color: lightcoral;
+    width: 50%;
+    height: 100%;
+    @include flexbox;
+    flex-direction: column;
+    .login__title {
+      // background-color: seagreen;
+      padding: 20px;
+      @include flexbox;
+      height: 10%;
+      width: 100%;
+      p {
+        font-size: 30px;
+        color: $grey;
+      }
+    }
+    .login__fields {
+      // background-color: lightgoldenrodyellow;
+      @include flexbox;
+      height: 30%;
+      width: 100%;
+      flex-direction: column;
+      .login__fields__username,
+      .login__fields__password {
+        width: 100%;
+        @include flexbox;
+      }
+
+      input {
+        padding: 10px;
+        margin: 10px 0px;
+        width: 60%;
+        font-size: 16px;
+        border: 1px solid rgba($grey, 0.25);
+        border-radius: 10px;
+        color: $grey;
+      }
+    }
+    .login__fields__forgot {
+      // background-color: lightgreen;
+      width: 60%;
+      height: 10%;
+      @include flexbox;
+    }
+    .login__button {
+      // background-color: lightslategray;
+      height: 20%;
+      width: 100%;
+      @include flexbox;
+
+      button {
+        padding: 10px;
+        width: 60%;
+        color: $white;
+        background-color: $deepBlue;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+      }
+    }
+
+    .login__contact {
+      // background-color: lightblue;
+      @include flexbox;
+      width: 100%;
+      height: 10%;
+      .login__contact__container {
+        width: 60%;
+        @include flexbox;
+        justify-content: flex-start;
+        p {
+          font-size: 14px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .login__link {
+      text-decoration: none;
+      color: $deepBlue;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .login {
+    .login__container {
+      width: 100%;
+
+      .login__contact {
+        .login__contact__container {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .login {
+    .login__container {
+      width: 100%;
+      .login__fields{
+        input{
+          width: 80%;
+        }
+      }
+      .login__contact {
+        .login__contact__container {
+          flex-direction: column;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .login {
+    .login__container {
+      width: 100%;
+      .login__fields{
+        input{
+          width: 80%;
+        }
+      }
+      .login__contact {
+        .login__contact__container {
+          flex-direction: column;
+          width: 100%;
+          p {
+            font-size: 12px;
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+// Height
+@media (max-height: 400px) {
+  .login {
+    height: 150vh;
+    
+  }
+}

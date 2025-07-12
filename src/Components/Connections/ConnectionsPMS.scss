@@ -1,0 +1,340 @@
+/* ----- Connections - PMS ----- */
+@import "../../Theme.scss";
+
+.con__PMS {
+  .con__PMS__bg {
+    width: 100%;
+    height: 100vh;
+    // background-color: lightgreen;
+
+    background-image: url("../BackgroundImages/ConnectionsBG.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    @include flexbox;
+    align-items: flex-start;
+
+    .con__PMS__wrapper {
+      // background-color: lightcoral;
+      @include flexbox;
+      flex-direction: column;
+      height: 300px;
+      margin-top: 50px;
+
+      .con__PMS__title {
+        // background-color: lightseagreen;
+        @include flexbox;
+
+        width: 80%;
+        height: 30%;
+        margin: 0px auto;
+        @include flexbox;
+
+        p {
+          font-size: 36px;
+          color: $white;
+          text-align: center;
+        }
+      }
+      .con__PMS__paragraph {
+        // background-color: mediumturquoise;
+        @include flexbox;
+
+        width: 80%;
+        height: 80%;
+        margin: 0px auto;
+        @include flexbox;
+
+        p {
+          font-size: 16px;
+          text-align: center;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .con__PMS__navigator {
+    // background-color: lightgray;
+    @include flexbox;
+
+    height: 200px;
+
+    .con__PMS__navigator__buttons {
+      // background-color: lightseagreen;
+      @include flexbox;
+      width: 50%;
+      height: 40%;
+
+      .con__PMS__navigator__button {
+        // background-color: lightgreen;
+        height: 100%;
+        @include flexbox;
+        margin: 0px 20px;
+
+        button {
+          width: 100px;
+          padding: 10px;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          background-color: $lightBlue;
+          color: $white;
+          font-weight: bold;
+          transition: background-color 0.5s ease-in-out;
+
+          &:hover{
+            background-color: $deepBlue;
+          }
+        }
+      }
+    }
+    .con__PMS__navigator__search {
+      // background-color: lightcoral;
+      width: 30%;
+      height: 40%;
+
+      @include flexbox;
+
+      .con__PMS__navigator__searchbox {
+        // background-color: lightgreen;
+        height: 40px;
+        @include flexbox;
+        input {
+          height: 100%;
+          width: 200px;
+          color: $grey;
+          border: 1px solid rgba($color:$grey, $alpha: 0.5);
+          border-radius: 15px 0px 0px 15px;
+          padding: 0px 10px;
+        }
+      }
+      .con__PMS__navigator__searchimage {
+        // background-color: lightpink;
+        background-color: $lightBlue;
+        height: 40px;
+        width: 40px;
+        border-radius: 0px 15px 15px 0px;
+        @include flexbox;
+
+        img {
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .con__PMS__header {
+    // background-color: lightgreen;
+    background-color: $lightBlue;
+    height: 100px;
+
+    @include flexbox;
+    .con__PMS__header__image {
+      // background-color: lightseagreen;
+      width: 20%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__PMS__header__name {
+      // background-color: lightcoral;
+      width: 20%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__PMS__header__region {
+      // background-color: lightpink;
+      width: 40%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+    .con__PMS__header__certification {
+      // background-color: lightslategray;
+      width: 20%;
+      @include flexbox;
+      p {
+        color: $white;
+      }
+    }
+  }
+
+  .con__PMS__companies {
+    min-height: 500px;
+    width: 100%;
+    // background-color: lightsteelblue;
+  }
+
+  .con__PMS__form {
+    height: 1200px;
+    width: 100%;
+    background-image: url("../BackgroundImages/ConnectionsFormBanner.png");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .con__PMS__form__container {
+      // background-color: lightcoral;
+      width: 80%;
+      height: 80%;
+
+      background-image: url("../BackgroundImages/ConnectionsFormBG.png");
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      @include flexbox;
+
+      .con__PMS__form__left {
+        height: 50%;
+        width: 40%;
+        // background-color: rgba($color: #000000, $alpha: 0.5);
+        @include flexbox;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        .con__PMS__form__left__title {
+          // background-color: lightpink;
+          width: 80%;
+          height: 30%;
+          @include flexbox;
+
+          p {
+            color: $white;
+            font-size: 16px;
+            padding: 10px 0px;
+          }
+        }
+
+      }
+      .con__PMS__form__right {
+        height: 90%;
+        width: 50%;
+        // background-color: slateblue;
+        @include flexbox;
+        flex-direction: column;
+        .con__PMS__form__right__title {
+          // background-color: tomato;
+          width: 100%;
+          height: 10%;
+          @include flexbox;
+
+          p {
+            color: $grey;
+            font-size: 28px;
+          }
+        }
+        .con__PMS__form__right__body {
+          // background-color: yellowgreen;
+          width: 100%;
+          height: 90%;
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+
+// Width
+@media (max-width: 800px) {
+  .con__PMS {
+    .con__PMS__bg {
+      .con__PMS__wrapper {
+        height: 500px;
+
+        .con__PMS__title {
+          p {
+            font-size: 24px;
+          }
+        }
+        .con__PMS__paragraph {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .con__PMS__navigator {
+      flex-direction: column;
+
+      .con__PMS__navigator__buttons {
+        width: 80%;
+
+        .con__PMS__navigator__button{
+          margin: 0px 5px;
+        }
+      }
+      .con__PMS__navigator__search {
+        width: 80%;
+      }
+    }
+
+    .con__PMS__form{
+      .con__PMS__form__container{
+        background-image: none;
+        background-color: $white;
+        .con__PMS__form__left{
+          display: none;
+        }
+
+        .con__PMS__form__right{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+.con__PMS{
+  .con__PMS__header{
+    .con__PMS__header__image{display: none}
+    .con__PMS__header__name{width: 50%;}
+    .con__PMS__header__region{display: none;}
+    .con__PMS__header__certification{width: 50%;}
+  }
+}
+}
+@media (max-width: 400px) {
+  .con__PMS {
+    .con__PMS__bg {
+      .con__PMS__wrapper {
+        height: 500px;
+
+        .con__PMS__title {
+          p {
+            font-size: 20px;
+          }
+        }
+        .con__PMS__paragraph {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+// Height
+@media (max-height: 600px) {
+  .con__PMS {
+    .con__PMS__bg {
+      height: 150vh;
+    }
+  }
+}
+@media (max-height: 600px) {
+  .con__PMS {
+    .con__PMS__bg {
+      height: 200vh;
+      .con__PMS__wrapper {
+        height: 500px;
+      }
+    }
+  }
+}

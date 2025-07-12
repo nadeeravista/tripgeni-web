@@ -1,0 +1,156 @@
+/* ----- Paper ----- */
+@import "../../Theme.scss";
+.paper {
+  .paper__bg {
+    height: 100vh;
+    background-image: url("../BackgroundImages/NewsBG.png");
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+
+    @include flexbox;
+    align-items: flex-start;
+    .paper__bg__wrapper {
+      width: 80%;
+      margin-top: 50px;
+      .paper__bg__title {
+        // background-color: coral;
+        width: 100%;
+        @include flexbox;
+
+        p {
+          font-size: 50px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .paper__date {
+    // background-color: lightcoral;
+    width: 80%;
+    margin: 20px auto;
+    @include flexbox;
+    justify-content: flex-end;
+    .paper__date__container {
+      //   background-color: lightgreen;
+      @include flexbox;
+
+      img {
+        height: 24px;
+        margin-right: 20px;
+      }
+      p {
+        @include flexbox;
+        height: 14px;
+        color: $grey;
+      }
+    }
+  }
+
+  .paper__heading {
+    width: 80%;
+
+    margin: 40px auto;
+    // background-color: coral;
+
+    p {
+      font-size: 26px;
+      color: $deepBlue;
+      text-align: center;
+    }
+  }
+  .paper__subheading {
+    width: 80%;
+
+    margin: 20px auto;
+    // background-color: mediumpurple;
+
+    p {
+      font-size: 16px;
+      color: $grey;
+      text-align: justify;
+    }
+  }
+  .paper__paragraph {
+    width: 80%;
+
+    margin: 20px auto;
+    // background-color: mediumspringgreen;
+
+    p {
+      font-size: 14px;
+      color: $grey;
+      text-align: justify;
+    }
+
+    br {
+      margin: 10px 0px;
+    }
+  }
+
+  .paper__logo {
+    // background-color: lightcoral;
+    width: 80%;
+    margin: 10px auto;
+    @include flexbox;
+    img {
+      height: 50px;
+    }
+  }
+
+  .paper__information {
+    width: 80%;
+
+    margin: 20px auto;
+    // background-color: coral;
+
+    p {
+      font-size: 20px;
+      color: $grey;
+      text-align: center;
+    }
+  }
+
+  .paper__button {
+    // background-color: lightgreen;
+    width: 80%;
+    margin: 10px auto;
+    @include flexbox;
+    height: 200px;
+
+    button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 2px solid $lightBlue;
+      background-color: $white;
+      color: $lightBlue;
+      cursor: pointer;
+      transition: background-color 0.5s ease-in-out;
+      &:hover {
+        background-color: $lightBlue;
+        color: $white;
+      }
+    }
+  }
+}
+// Width
+@media (max-width: 800px) {
+  .paper {
+    .paper__bg {
+      .paper__bg__wrapper {
+        .paper__bg__title {
+          p {
+            font-size: 36px;
+          }
+        }
+       
+      }
+    }
+
+     .paper__heading {
+          p {
+            font-size: 22px;
+          }
+        }
+  }
+}

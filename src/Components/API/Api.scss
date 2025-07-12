@@ -1,0 +1,388 @@
+/* ----- API ----- */
+@import "../../Theme.scss";
+.api {
+  // background-color: lightgreen;
+  width: 100%;
+
+  .api__bg {
+    height: 100vh;
+    background-image: url("../BackgroundImages/ApiBG.webp");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @include flexbox;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .api__bg__title {
+      // background-color: lightgreen;
+      width: 100%;
+      height: 40%;
+      @include flexbox;
+      p {
+        color: $white;
+        font-size: 65px;
+        text-align: center;
+      }
+    }
+
+    .api__bg__button {
+      // background-color: lightcoral;
+      width: 100%;
+      height: 30%;
+      @include flexbox;
+
+      button {
+        border: none;
+        width: 50%;
+        padding: 20px;
+        border-radius: 40px;
+        background-image: linear-gradient(
+          to right,
+          $deepBlue 20%,
+          $lightBlue 70%
+        );
+        color: $white;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .api__title {
+    // background-color: lightcoral;
+    @include flexbox;
+    width: 80%;
+    margin: 0px auto;
+
+    p {
+      width: 100%;
+      color: $deepBlue;
+      padding-top: 10px 0px;
+      font-size: 24px;
+      @include flexbox;
+      justify-content: flex-start;
+    }
+  }
+  .api__paragraph {
+    // background-color: lightseagreen;
+
+    @include flexbox;
+    width: 70%;
+    margin: 20px auto;
+
+    p {
+      width: 100%;
+      color: $grey;
+      padding-top: 10px 0px;
+      @include flexbox;
+      justify-content: flex-start;
+    }
+  }
+
+  .api__download {
+    // background-color: lightskyblue;
+    width: 70%;
+    margin: 10px auto;
+    @include flexbox;
+    justify-content: flex-start;
+    img {
+      height: 24px;
+      margin-right: 10px;
+    }
+    button {
+      @include flexbox;
+      padding: 10px;
+      width: 300px;
+      color: $white;
+      background-color: $deepBlue;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .api__box {
+    width: 100%;
+    height: 250px;
+    // background-color: seagreen;
+    @include flexbox;
+    justify-content: space-between;
+    .api__box__left {
+      height: 100%;
+      width: 45%;
+      background-color: $deepBlue;
+      border-radius: 0px 25px 25px 0px;
+      @include flexbox;
+
+      .api__box__left__content {
+        // background-color: red;
+        @include flexbox;
+        height: 80%;
+        flex-direction: column;
+
+        .api__box__left__title {
+          // background-color: lightcoral;
+          width: 100%;
+          height: 20%;
+          @include flexbox;
+          margin: 10px 0px;
+          padding-top: 10px;
+          // justify-content: flex-end;
+          p {
+            padding: 10px;
+            font-size: 20px;
+            color: $white;
+          }
+        }
+
+        .api__box__left__body {
+          // background-color: lightgreen;
+          width: 100%;
+          height: 40%;
+          @include flexbox;
+
+          p {
+            padding: 10px;
+            font-size: 16px;
+            color: $white;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .api__box__right {
+      height: 100%;
+      width: 45%;
+      background-color: $lightBlue;
+      border-radius: 25px 0px 0px 25px;
+      @include flexbox;
+      .api__box__right__content {
+        // background-color: red;
+        @include flexbox;
+        height: 80%;
+        flex-direction: column;
+
+        .api__box__right__title {
+          // background-color: lightcoral;
+          width: 100%;
+          height: 20%;
+          @include flexbox;
+          margin: 10px 0px;
+          padding-top: 10px;
+          // justify-content: flex-start;
+          p {
+            padding: 10px;
+            font-size: 20px;
+            color: $white;
+          }
+        }
+
+        .api__box__right__body {
+          // background-color: lightgreen;
+          width: 100%;
+          height: 40%;
+          @include flexbox;
+
+          p {
+            padding: 10px;
+            font-size: 16px;
+            color: $white;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .api__title__box {
+    // background-color: lightcoral;
+    @include flexbox;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 10px auto;
+
+    p {
+      color: $white;
+      padding: 10px;
+      font-size: 20px;
+      @include flexbox;
+      justify-content: flex-start;
+      border-radius: 20px;
+    }
+  }
+
+  .api__list {
+    // background-color: lightseagreen;
+
+    @include flexbox;
+    width: 70%;
+    margin: 20px auto;
+    ul {
+      list-style: none;
+      li {
+        margin: 10px 0px;
+        width: 100%;
+        color: $grey;
+        padding-top: 10px 0px;
+      }
+    }
+  }
+
+  .api__form {
+    height: 1200px;
+    width: 100%;
+    background-image: url("../BackgroundImages/LightBlueBanner.png");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    @include flexbox;
+
+    .api__form__container {
+      // background-color: lightcoral;
+      width: 80%;
+      height: 80%;
+
+      background-image: url("../BackgroundImages/ApiFormBG.png");
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      @include flexbox;
+
+      .api__form__left {
+        height: 100%;
+        width: 50%;
+        // background-color: seagreen;
+
+        .api__form__left__title {
+          // background-color: lightpink;
+          width: 100%;
+          height: 25%;
+          @include flexbox;
+
+          p {
+            color: $white;
+            font-size: 36px;
+            padding: 50px;
+          }
+        }
+
+        .api__form__left__body {
+          // background-color: magenta;
+          p {
+            color: $white;
+            padding: 50px;
+          }
+        }
+      }
+      .api__form__right {
+        height: 100%;
+        width: 50%;
+        // background-color: slateblue;
+        @include flexbox;
+        flex-direction: column;
+        .api__form__right__title {
+          // background-color: tomato;
+          width: 100%;
+          height: 10%;
+          @include flexbox;
+
+          p {
+            color: $white;
+            font-size: 28px;
+          }
+        }
+        .api__form__right__body {
+          // background-color: yellowgreen;
+          width: 100%;
+          height: 90%;
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .api {
+    .api__bg {
+      .api__bg__title {
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .api {
+    .api__bg {
+      .api__bg__title {
+        p {
+          font-size: 26px;
+        }
+      }
+
+      .api__bg__button {
+        button {
+          width: 80%;
+          font-size: 14px;
+        }
+      }
+    }
+    .api__box {
+      height: 500px;
+      display: block;
+
+      .api__box__left {
+        height: 45%;
+        width: 80%;
+      }
+      .api__box__right {
+        height: 45%;
+        width: 80%;
+        margin-left: auto;
+        margin-top: 50px;
+      }
+    }
+
+    .api__form {
+      .api__form__container {
+        flex-direction: column-reverse;
+        width: 90%;
+        .api__form__left {
+          height: 20%;
+          width: 100%;
+
+          .api__form__left__title {
+            height: 40%;
+            width: 100%;
+            @include flexbox;
+            p {
+              font-size: 14px;
+              width: 100%;
+              padding: 10px 0px;
+              text-align: center;
+            }
+          }
+
+          .api__form__left__body {
+            height: 60%;
+            p {
+              padding: 10px;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+        .api__form__right {
+          height: 80%;
+          width: 100%;
+          .api__form__right__body {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* ----- Home Slider ----- */
+@import "../../Theme.scss";
+
+.homeslider {
+  margin: auto;
+
+  .homeslider__swipe {
+    // background-color: lightblue;
+    background-color: $fadedBlue;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeslider {
+    margin: auto;
+
+    .homeslider__swipe {
+      height: 600px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .homeslider {
+    margin: auto;
+
+    .homeslider__swipe {
+      height: 600px;
+    }
+  }
+}

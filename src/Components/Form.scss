@@ -1,0 +1,75 @@
+/* ----- Form ----- */
+@import "../Theme.scss";
+
+.form {
+  // background-color: lightgreen;
+
+  @include flexbox;
+  flex-direction: column;
+
+  .form__fields {
+    width: 100%;
+    // background-color: lightcoral;
+
+    .form__field {
+      margin: 5px 0px;
+      input {
+        padding: 10px;
+        margin: 10px 0px;
+        width: 100%;
+        font-size: 16px;
+        border: 1px solid rgba($grey, 0.25);
+        border-radius: 10px;
+        color: $grey;
+
+        &::placeholder {
+          color: rgb(196, 196, 196);
+        }
+      }
+    }
+
+    .form__fields__radio {
+      input {
+        margin: 10px;
+      }
+      label {
+        color: $grey;
+        font-size: 14px;
+      }
+    }
+
+    .form__fields__message {
+      textarea {
+        resize: none;
+        width: 100%;
+        font-family: "Poppins";
+        padding: 10px;
+        margin: 10px 0px;
+        color: $grey;
+        border: 1px solid rgba($grey, 0.25);
+        border-radius: 5px;
+
+        &::placeholder {
+          color: rgb(196, 196, 196);
+        }
+      }
+    }
+  }
+  .form__button {
+    width: 80%;
+    // background-color: lightcyan;
+    @include flexbox;
+
+    button {
+      padding: 10px;
+      width: 60%;
+      color: $white;
+      background-color: $deepBlue;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+}

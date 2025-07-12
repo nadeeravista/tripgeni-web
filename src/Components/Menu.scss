@@ -1,0 +1,125 @@
+/* ----- Menu ----- */
+@import "../Theme.scss";
+
+.menu {
+  background-color: $white;
+  // background-color: red;
+  height: 100vh;
+  @include flexbox;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .menu__container {
+    // background-color: lightcoral;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .menu__links {
+      ul {
+        list-style: none;
+
+        li {
+          // background-color: chartreuse;
+
+          padding: 10px 30px;
+          @include flexbox;
+          justify-content: flex-start;
+
+          .menulink {
+            text-decoration: none;
+            color: $grey;
+            font-size: 16px;
+            width: 100%;
+            border-bottom: 1px solid rgba($color: $grey, $alpha: 0.5);
+          }
+
+          ul {
+            li {
+              .submenulink {
+                text-decoration: none;
+                color: $grey;
+                font-size: 14px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu__login {
+      // background-color: red;?
+      @include flexbox;
+      height: 50px;
+      margin: 30px 0px;
+
+      button {
+        @include flexbox;
+        padding: 10px;
+        width: 250px;
+        color: $white;
+        background-color: $deepBlue;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+
+        img {
+          margin-right: 10px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .menu__footer {
+    background-color: $lightBlue;
+    width: 100%;
+    height: 100px;
+
+    @include flexbox;
+    flex-direction: column;
+
+    .menu__footer__contact {
+      @include flexbox;
+      color: $white;
+      // background-color: red;
+      width: 80%;
+      margin: 10px 0px;
+      img {
+        margin-right: 40px;
+      }
+    }
+    .menu__footer__mail {
+      @include flexbox;
+      color: $white;
+      width: 80%;
+      img {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+#droplink {
+  @include flexbox;
+  flex-direction: column;
+  // background-color: red;
+
+  ul {
+    li {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .menu {
+    height: 90vh;
+  }
+}
+@media (max-height: 400px) {
+  .menu {
+    height: 80vh;
+  }
+}

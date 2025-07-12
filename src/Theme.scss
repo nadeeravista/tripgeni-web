@@ -1,0 +1,21 @@
+// Colors
+$white : #ffffff;
+$black : #000000;
+$deepBlue : #034caf;
+// $lightBlue : #32c6f4;
+$lightBlue : #0091E5;
+$fadedBlue :#e5f4fc;
+$grey: #454753;
+
+
+// Mixins
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button,input{
+    font-family: "poppins";
+}

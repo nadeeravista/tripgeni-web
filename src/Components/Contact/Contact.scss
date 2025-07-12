@@ -1,0 +1,197 @@
+/* ----- Contact ----- */
+@import "../../Theme.scss";
+
+.contact {
+  //   background-color: lightgreen;
+
+  .contact__title {
+    width: 100%;
+    height: 150px;
+    @include flexbox;
+    // background-color: lightgrey;
+    p {
+      color: $grey;
+      font-size: 45px;
+      //   padding-top: 50px;
+    }
+  }
+  .contact__subtitle {
+    width: 100%;
+    height: 100px;
+    // background-color: lightpink;
+    @include flexbox;
+
+    p {
+      color: $grey;
+      font-size: 18px;
+      text-align: center;
+      padding: 0px 10px;
+    }
+  }
+
+  .contact__form {
+    width: 100%;
+    // background-color: seagreen;
+    padding: 50px 0px;
+    @include flexbox;
+    align-items: flex-start;
+    .contact__form__left {
+      //   background-color: lightgrey;
+      width: 50%;
+      height: 100%;
+      @include flexbox;
+      flex-direction: column;
+
+      .contact__form__left__title {
+        // background-color: lightseagreen;
+        @include flexbox;
+        justify-content: flex-start;
+        width: 80%;
+        font-size: 20px;
+        color: $grey;
+      }
+
+      .form__container {
+        // background-color: red;
+        width: 80%;
+      }
+    }
+    .contact__form__right {
+      //   background-color: lightsalmon;
+      width: 50%;
+      height: 100%;
+      @include flexbox;
+      flex-direction: column;
+      color: $grey;
+
+      .contact__form__right__title {
+        // background-color: lightseagreen;
+        @include flexbox;
+        justify-content: flex-start;
+        width: 80%;
+        font-size: 20px;
+      }
+
+      .contact__form__right__container {
+        width: 80%;
+        height: 800px;
+        background-image: url("../BackgroundImages/Contact.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        @include flexbox;
+        justify-content: flex-start;
+        .contact__details__wrapper {
+          height: 100%;
+          width: 80%;
+            // background-color: red;
+
+          @include flexbox;
+          flex-direction: column;
+
+          .contact__details__title {
+            // background-color: lightgreen;
+            width: 100%;
+            @include flexbox;
+            padding: 10px;
+            p {
+              color: $white;
+              font-size: 22px;
+            }
+          }
+          .contact__details__item {
+            // background-color: lightcoral;
+            width: 100%;
+            margin: 0px 0px 5px 0px;
+            @include flexbox;
+
+            p{
+                margin: 0px;
+            }
+            .contact__details__image {
+              //   background-color: lime;
+              width: 10%;
+              height: 100%;
+              @include flexbox;
+              // align-items: flex-start;
+            }
+            .contact__details__text {
+              //   background-color: mediumaquamarine;
+              width: 90%;
+              height: 100px;
+
+              @include flexbox;
+              flex-direction: column;
+              // justify-content: flex-start;
+              p {
+                width: 100%;
+                // background-color: limegreen;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    .contact__form {
+      flex-direction: column;
+      .contact__form__left {
+        width: 100%;
+      }
+      .contact__form__right {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    .contact__title {
+      p {
+        font-size: 26px;
+      }
+    }
+    .contact__subtitle {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .contact__form {
+      flex-direction: column;
+      .contact__form__left {
+        width: 100%;
+      }
+      .contact__form__right {
+        width: 100%;
+        margin: 20px 0px;
+        .contact__form__right__container {
+          margin: 20px 0px;
+          .contact__details__wrapper {
+            width: 100%;
+            padding: 10px;
+            .contact__details__item {
+              .contact__details__image {
+                img {
+                  height: 20px;
+                }
+              }
+              .contact__details__text {
+                width: 100%;
+                padding: 0px 10px;
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

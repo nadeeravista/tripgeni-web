@@ -2,6 +2,9 @@
   "name": "tripgeni",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16"
+  },
   "dependencies": {
     "react": "^17.0.1",
     "react-calendar": "^3.3.0",
